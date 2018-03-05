@@ -1,6 +1,7 @@
 # TwitterTests
 Selenium tests to test the Twitter Publish Feature (on the Web).
 They include:
+
 	- smoke test. It can be run after each code change to verify the basic functionality to publish a tweet with text content. 
 	  Boundary value analysis technique was used to select input data.
 	  
