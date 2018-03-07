@@ -1,7 +1,12 @@
-﻿namespace Twitter.UITests.TestData
+﻿using System.Configuration;
+
+namespace Twitter.UITests.TestData
 {
     public static class LoginData
     {
-        public static readonly Account GmailAccount = new Account("expert.for.tests@gmail.com", "expert.for.tests2018");
+        public static readonly Account GmailAccount = new Account(
+            ConfigurationManager.AppSettings["username"],
+            ConfigurationManager.AppSettings["password"]
+        );
     }
 }
